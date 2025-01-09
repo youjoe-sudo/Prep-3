@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0dd471;
+    text-align: center; /* لضبط النصوص في المنتصف */
+}
+klojf{
+    text-align: center;
+    text-overflow: clip;
+    text-transform: capitalize;
+    text-shadow: #0dd471;
+    font-size: large;
+    font-weight: 300;
+    font-style: normal;
+}
+h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #000000;
+}
+
+/* تنسيق الأزرار */
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Doaa{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000000; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Science{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Science:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.Doaa:hover{
+background-color: #007bff;
+}
+.Fania{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Fania:hover{
+    background-color: #000000;
+}
+
+.Deik {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Deik:hover {
+    background-color: #000000; /* لون عند التمرير بالماوس */
+}
+
+.Haseb {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Haseb:hover {
+    background-color: #000000; /* لون عند التمرير بالماوس */
+}
+.gk {
+    font-size: 1.5rem; /* حجم النص */
+    color: #000000; /* لون النص */
+    text-align: center; /* توسيط النص */
+    margin: 20px auto; /* مسافات خارجية */
+    background-color: #0dd471; /* لون خلفية */
+    border: 2px solid #007BFF; /* إطار النص */
+    padding: 15px; /* مسافات داخلية */
+    border-radius: 10px; /* زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير عند التحويم */
+    width: fit-content; /* ضبط العرض على النص فقط */
+}
+
+.gk:hover {
+    transform: scale(1.05); /* تكبير بسيط عند التحويم */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التحويم */
+    color: #ffffff; /* تغيير لون النص عند التحويم */
+    background-color: #000000; /* تغيير لون الخلفية عند التحويم */
+}
+
+
+
+.English{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.English:hover{
+    background-color: #000000; /* لون عند التمرير بالماوس */
+}
+.Gaber{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Gaber:hover{
+    background-color: #000000;
+}

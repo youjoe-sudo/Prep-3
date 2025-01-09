@@ -1,0 +1,64 @@
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* لجعل العناصر تنزل إلى سطر جديد إذا لم تكن هناك مساحة كافية */
+    justify-content: center; /* توسيط العناصر أفقياً */
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: center; /* توسيط العناصر عموديًا */
+    }
+
+    .card {
+        width: 90%; /* جعل العرض مناسب للشاشة الصغيرة */
+        margin-bottom: 15px; /* إضافة مسافة بين العناصر */
+    }
+}
+
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: blue; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color:blanchedalmond ;
+    color: black;
+    transition: 1s;
+}
+.bp{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: blue; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.bp:hover{
+    background-color:blanchedalmond ;
+    color: black;
+    transition: 1s;
+}
