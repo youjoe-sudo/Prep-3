@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العد التنازلي لـ 31/5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #116399, #38caef);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .countdown div {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .countdown div span {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            color: white;
+        }
+
+        .home-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            border: 2px solid white;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-top:15px ;
+        }
+
+        .home-btn i {
+            margin-right: 8px;
+        }
+
+        .home-btn:hover {
+            background: white;
+            color: #116399;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .countdown {
+                font-size: 1rem;
+            }
+            .container{
+              width: 160%;
+            }
+            .countdown div {
+                padding: 15px;
+                min-width: 70px;
+            }
+
+            .link, .home-btn {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>العد التنازلي ليوم الأمتحان</h1>
+
+        <div class="countdown">
+            <div><span id="days">0</span><p>يوم</p></div>
+            <div><span id="hours">0</span><p>ساعة</p></div>
+            <div><span id="minutes">0</span><p>دقيقة</p></div>
+            <div><span id="seconds">0</span><p>ثانية</p></div>
+        </div>
+
+        <p class="message">روح ذاااااكر 💥</p>
+
+        <!-- زر الصفحة الرئيسية -->
+        <a href="index.html" class="home-btn">
+            <i class="fa-solid fa-home"></i> الصفحة الرئيسية
+        </a>
+    </div>
+
+    <script>
+        const targetDate = new Date("May 31, 2025 08:00:00").getTime();
+
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference <= 0) {
+                clearInterval(countdown);
+                document.querySelector(".countdown").innerHTML = "وصلنا 🎉🎉🎉";
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }, 1000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* إعدادات أساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #007BFF, #1E90FF);
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* تنسيق العنوان الرئيسي */
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeIn 1.5s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* زر العودة للصفحة الرئيسية */
+.Home2 {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #28A745, #20C997);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.Home2:hover {
+    background: linear-gradient(45deg, #218838, #1E7E34);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* تصميم الأقسام */
+.model-section {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    transition: all 0.4s ease-in-out;
+}
+
+.model-section:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* عنوان القسم */
+.model-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* الأزرار */
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    margin: 10px 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* زر التحميل */
+.deiin {
+    background: linear-gradient(45deg, #6A5ACD, #483D8B);
+}
+
+.deiin:hover {
+    background: linear-gradient(45deg, #483D8B, #4B0082);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* زر العرض */
+.view1 {
+    background: linear-gradient(45deg, #FF8C00, #FFA500);
+    color: #fff;
+}
+
+.view1:hover {
+    background: linear-gradient(45deg, #FF7F50, #FF6347);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* أنيميشن للعناصر */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأثير عند التحريك */
+.model-section:hover h2 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}

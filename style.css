@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* الخلفية الديناميكية */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #08caec, #09d34c, #4b78a8);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+}
+
+/* أنيميشن الخلفية */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* الأزرار */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: #333;
+}
+.button.han{
+    background-color: #4CAF50;
+}
+.button.han:hover{
+    background-color: #333;
+}
+
+
+
+/* ألوان مختلفة للأزرار */
+.button.science {
+    background-color: #4CAF50;
+}
+
+.button.duaa {
+    background-color: #FF9800;
+}
+.button.duaa:hover{
+    background-color: #333;
+}
+
+.button.youtube {
+    background-color: red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button.whatsapp{
+    background-color: #4CAF50;
+}
+.button.science:hover{
+    background-color: #333;
+}
+
+/* إعدادات صورة الشخصية */
+.profile-img {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+/* الفوتر */
+footer {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    border-top: 2px solid #444;
+}
+
+/* الهيدر */
+.header {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+/* أقسام إضافية */
+.content-section {
+    padding: 50px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* أنماط متجاوبة للأجهزة الصغيرة */
+
+/* شاشة كبيرة (سطح المكتب) */
+@media (min-width: 1024px) {
+    .button {
+        font-size: 1.2rem;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .content-section {
+        width: 60%;
+    }
+}
+.button.youtube:hover{
+    background-color: #0f0f0f;
+}
+/* شاشة متوسطة (التابلت) */
+@media (max-width: 1024px) {
+    .button {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .content-section {
+        width: 70%;
+    }
+}
+
+/* شاشة صغيرة (التليفون المحمول) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+/* نصائح */
+.tips-section {
+    background: #222;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.tips-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tip-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tip-icon {
+    font-size: 2rem;
+    color: #ff77e9;
+    margin-bottom: 15px;
+}
+
+.tip-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.tip-card:hover {
+    background: #444;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+    .button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .content-section {
+        width: 90%;
+    }
+}

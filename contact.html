@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<style>
+    /* استايل الخلفية */
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #10b318, #1ce2f0, #7ed112);
+    height: 100vh;
+    display: flex;
+    backdrop-filter: blur(60px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* صندوق التواصل */
+.contact-container {
+    background: white;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* الأزرار */
+.contact-buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 50px;
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+/* ألوان الأزرار */
+.whatsapp { background: #25D366; }
+.whatsapp:hover { background: #1ebe57; transform: scale(1.05); box-shadow: 0px 6px 15px rgba(37, 211, 102, 0.5); }
+
+.email { background: #D44638; }
+.email:hover { background: #b8322b; transform: scale(1.05); box-shadow: 0px 6px 15px rgba(212, 70, 56, 0.5); }
+
+.twitter { background: #1DA1F2; }
+.twitter:hover { background: #0d8bd9; transform: scale(1.05); box-shadow: 0px 6px 15px rgba(29, 161, 242, 0.5); }
+
+.call { background: #28a745; }
+.call:hover { background: #218838; transform: scale(1.05); box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.5); }
+
+/* أيقونات الأزرار */
+.btn i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+/* تأثير الدخول */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+    <div class="contact-container">
+        <h2>تواصل معنا</h2>
+        <p>اختر الطريقة المناسبة للتواصل معنا 👇</p>
+        
+        <div class="contact-buttons">
+            <a href="https://wa.me/201285536282" class="btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a href="mailto:mohamed.a.a.fatah2010@gmail.com" class="btn email">
+                <i class="fas fa-envelope"></i> جيميل
+            </a>
+           
+            </a>
+            <a href="tel:+201285536282" class="btn call">
+                <i class="fas fa-phone"></i> اتصل بنا
+            </a>
+        </div>
+    </div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67f03710462e11191019759e/1io15e6gv';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
