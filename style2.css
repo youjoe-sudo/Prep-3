@@ -1,0 +1,59 @@
+body{
+    background-color: aqua;
+    margin: 0;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    top: 0px;
+}
+button:hover{
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+.Hasseb{
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 255, 21);
+}
+.view2{
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 255, 21);
+}
+.Home3{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Home3:hover{
+    background-color: aqua;
+    color: black;
+}
+.LOK{
+    bottom: 50px;
+}
+img{
+    border: 15px;
+    border-radius: 29px;
+}

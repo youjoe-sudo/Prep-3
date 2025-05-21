@@ -1,0 +1,52 @@
+h1{    margin: 20px 0;
+    font-size: 2rem;
+    color: #000000;}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0dd471;
+    text-align: center; /* لضبط النصوص في المنتصف */
+}
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #0dd471;
+    color: #000000;
+}
+.View4{
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 255, 21);
+}
+.Download4{
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 255, 21);
+}
+.Home1{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff; /* لون زر الحاسب */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Home1:hover{
+    background-color: #0dd471;
+    color: #000000;
+}

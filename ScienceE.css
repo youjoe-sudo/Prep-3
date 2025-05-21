@@ -1,0 +1,57 @@
+/* التصميم الأساسي للصفحة */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to bottom, #e8f5e9, #a5d6a7); /* تأثير التدرج */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* تصميم العنوان */
+h1 {
+    color: #2e7d32; /* لون النص */
+    font-size: 2.5rem; /* حجم النص */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* تأثير ظل خفيف */
+}
+
+/* الروابط (الأزرار) */
+a {
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 50px; /* حواف دائرية للأزرار */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* تأثير الانتقال عند التمرير */
+    display: inline-block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* ظل خفيف للأزرار */
+}
+
+/* زر العرض */
+.vb {
+    background-color: #2196F3; /* لون الزر */
+    color: #fff; /* لون النص */
+}
+
+/* زر التحميل */
+.bn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* تأثير التمرير على الأزرار */
+a:hover {
+    transform: scale(1.1); /* تكبير الزر عند التمرير */
+    opacity: 0.9; /* شفافية خفيفة */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* تعزيز الظل */
+}
+.Home4{
+    background-color: yellow;
+    color:#000;
+}
